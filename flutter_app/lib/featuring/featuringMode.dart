@@ -10,15 +10,23 @@ import 'package:flutter/material.dart';
           children: <Widget>[ 
             
             RaisedButton(
-              color: Colors.white,
-              shape:OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),
-              onPressed: () => Navigator.of(context).pushNamed("/slot"), child: new Text('slotへ'),
+              color: Colors.red,
+              textColor: Colors.white,
+              shape: StadiumBorder(side: BorderSide(color: Colors.red),),
+              onPressed: () => Navigator.of(context).pushNamed("/slot"), child: new Text('     NOMAL     '),
+              ),
+
+            RaisedButton(
+              color: Colors.red,
+              textColor: Colors.white,
+              shape: StadiumBorder(side: BorderSide(color: Colors.red),),
+              onPressed: () => Navigator.of(context).pushNamed("/slot"), child: new Text('       HARD       '),
               ),
 
             RaisedButton(
               color: Colors.white,
-              shape:OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),              
-              onPressed: () => Navigator.of(context).pop(), child: new Text('戻る'),
+              shape: StadiumBorder(side: BorderSide(color: Colors.red),),
+              onPressed: () => Navigator.of(context).pop(), child: new Text('       BACK       '),
               ),
 
             ],

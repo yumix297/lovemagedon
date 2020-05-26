@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/coupling/choose.dart';
+import 'package:flutter_app/coupling/prof.dart';
 import 'package:flutter_app/featuring/featuringMode.dart';
 import 'package:flutter_app/featuring/slot.dart';
-
 import 'coupling/coupleMode.dart';
+import 'coupling/profile.dart';
+import 'coupling/result.dart';
 
 void main() => runApp(MyApp());
 
+
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +29,9 @@ class MyApp extends StatelessWidget {
         '/slot': (BuildContext context) => new Slot(),
         '/couple1': (BuildContext context) => new CoupleMode(),
         '/choose': (BuildContext context) => new Choose(),
-
+        '/profile': (BuildContext context) => new Profile(),
+        '/prof': (BuildContext context) => new Prof(),
+        '/result': (BuildContext context) => new Result(),
       },
     );
   }
@@ -41,30 +48,37 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-
   @override
   Widget build(BuildContext context) {        
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[ 
+          children: <Widget>[
+
+            Image.asset('assets/images/love.jpg', width: 250.0, height: 250.0),
             
             RaisedButton(
               color: Colors.white,
-              shape:OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),
-              onPressed: () => Navigator.of(context).pushNamed("/couple1"), child: new Text('     カップリングモード     '),
+              shape: StadiumBorder(
+                side: BorderSide(color: Colors.red),
+                ),
+              onPressed: () => Navigator.of(context).pushNamed("/couple1"), child: new Text('      カップリングモード       '),
               ),
 
             RaisedButton(
-              color: Colors.white,
-              shape:OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),
-              onPressed: () => Navigator.of(context).pushNamed("/feat1"), child: new Text(' フューチャリングモード '),
+              color: Colors.red,
+              textColor: Colors.white,
+              shape: StadiumBorder(
+                side: BorderSide(color: Colors.red),
+                ),
+              onPressed: () => Navigator.of(context).pushNamed("/feat1"), child: new Text('   フューチャリングモード   '),
               ),
 
-            ],
-          ),
-          ),
+          ]
+        ),
+
+      ),
     );
   }
 }
