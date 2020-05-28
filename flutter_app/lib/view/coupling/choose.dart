@@ -1,6 +1,4 @@
-import 'dart:async';
-import 'package:flutter/material.dart';
-import 'package:flutter_app/coupling/result.dart';
+import '../../view/importer.dart';
 
 class Choose extends StatefulWidget {
   Choose({Key key, this.title}) : super(key: key);

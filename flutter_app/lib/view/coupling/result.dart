@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/animation.dart';
+import '../../view/importer.dart';
 
 class Result extends StatefulWidget {
   Result({Key key, this.title}) : super(key: key);

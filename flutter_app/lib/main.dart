@@ -1,15 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_app/coupling/choose.dart';
-import 'package:flutter_app/coupling/prof.dart';
-import 'package:flutter_app/featuring/featuringMode.dart';
-import 'package:flutter_app/featuring/slot.dart';
-import 'coupling/coupleMode.dart';
-import 'coupling/profile.dart';
-import 'coupling/result.dart';
+import 'view/importer.dart';
 
 void main() => runApp(MyApp());
-
-
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -29,7 +20,6 @@ class MyApp extends StatelessWidget {
         '/slot': (BuildContext context) => new Slot(),
         '/couple1': (BuildContext context) => new CoupleMode(),
         '/choose': (BuildContext context) => new Choose(),
-        '/profile': (BuildContext context) => new Profile(),
         '/prof': (BuildContext context) => new Prof(),
         '/result': (BuildContext context) => new Result(),
       },

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import '../../view/importer.dart';
 
  class FeaturingMode extends StatelessWidget {
   @override

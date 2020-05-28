@@ -1,5 +1,4 @@
-import 'dart:math';
-import 'package:flutter/material.dart';
+import '../../view/importer.dart';
 
 class CoupleMode extends StatefulWidget {
   CoupleMode({Key key, this.title}) : super(key: key);

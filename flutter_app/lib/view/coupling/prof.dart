@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import '../../view/importer.dart';
 
 class Prof extends StatefulWidget {
   Prof({Key key, this.title}) : super(key: key);
